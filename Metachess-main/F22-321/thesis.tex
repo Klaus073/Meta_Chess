@@ -1,0 +1,85 @@
+\documentclass{fast-nuces-bs}
+
+\usepackage{blindtext}
+\usepackage{mathptmx}% Times Roman font
+\usepackage[T1]{fontenc}
+\usepackage{lipsum} 
+\usepackage{sectsty}
+\usepackage{tikz-uml}
+\usepackage[compact]{titlesec}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage{skak}
+\usepackage{graphicx}
+%\usepackage{float}
+\usepackage[rawfloats=true]{floatrow} 
+\restylefloat{figure}
+\vspace{-3mm}
+%\titlespacing{\section}{0pt}{0pt}{0pt} % this reduces space between (sub)sections to 0pt, for example
+\AtBeginDocument{%                     % this will reduce spaces between parts (above and below) of texts within a (sub)section to 0pt, for example - like between an 'eqnarray' and text
+	\setlength\abovedisplayskip{0pt}
+	\setlength\belowdisplayskip{0pt}}
+\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+
+\usepackage{lscape}
+% Information about the Thesis 
+% -----------------------------------------------------------------------------
+% (All are compulsory, do not delete any line other than author Information)
+% For e.g., usually there are 3 students in a group, so leave authorone, 
+% authortwo, and authorthree, and delete authorfour.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\department{Department of Computer Science}
+\faculty{Computer Science}
+\degreeyear{2022}
+\degreemonth{September}
+\degreename{Computer Science}
+\campuscity{Peshawar}
+\authorone{Muhammad Abdullah}{p19-0036}
+\authortwo{Nauman Tasawar}{p19-0067}
+\authorthree{Abdullah Tahir}{p19-0073}
+%\authorfour{John Cena}{p15-6789}
+\supervisor{Mr Zeshan Khan}
+\sessionduration{2019-2023}
+%\cosupervisor{Dr. Omar Usman Khan}
+%\deanname{Dr. Hasina Khatoon}
+\directorname{Dr. Omar Usman Khan}
+\hodname{Dr. Hafeez-ur-Rehman}
+\fypcoordinatorname{Mr Zeshan Khan}
+\title{MetaChess: Close to reality chess in metaverse}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Former document starts below this
+\begin{document}
+
+\begin{acknowledgements}
+	Acknowledgments will be added at the end of the report.
+\end{acknowledgements}
+
+\begin{abstract}
+A fully immersive, hyper-spatiotemporal, self-sustaining virtual shared space for humans to play, work, and socialize is the goal of Metaverse, an evolving Internet paradigm.The metaverse is moving from science fiction to a future reality thanks to recent developments in emerging technologies like extended reality, artificial intelligence, and blockchain.This project is about making chess game in Metaverse. The users will be able to play the game using Oculus VR gear and can interact with the chess board and chess pieces using the said VR set. This will enable the users to play the game with each other from comfort of their liking. The gameplay would simulate the experience as if the user is playing the game in real-time. The player will have an option to choose from different rooms to play in. In each room user will have different themes to enhance user experience e.g. There will be a room in which user can select medieval style structure. 
+\end{abstract}
+
+\include{sections/chapter1}
+\include{sections/chapter2}
+\include{sections/chapter3}
+\include{sections/chapter4}
+\include{sections/chapter5}
+\include{sections/chapter6}
+\include{sections/chapter7}
+\include{sections/chapter8}
+\include{sections/chapter9}
+\include{sections/chapter10}
+\include{sections/chapter11}
+\include{sections/appendix1}
+\include{sections/conclusions}
+
+%\appendix
+%\include{appendix1/appendix1}
+
+\bibliographystyle{plain}
+\bibliography{bib} 
+\addcontentsline{toc}{chapter}{References} 
+
+\end{document}
